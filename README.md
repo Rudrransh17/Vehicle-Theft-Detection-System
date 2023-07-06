@@ -18,15 +18,9 @@ The following hardware components are used in this project:
 The individual components of the system were tested as follows:
 
 - GPS and GSM: Online code samples available on the Arduino forum were used to test the GPS and GSM modules.
-- Other Components: As the other components could be directly tested, unit testing was performed.
+- Other Components: Unit testing was performed for the other components.
 
-Simulation of the GPS and GSM functionality was done using PROTEUS, a software tool for simulating electronic circuits. The following specific libraries were used in the simulation:
-
-- GPS Library
-- GSM Library
-- Arduino Library
-
-The GSM module was tested for AT commands on PROTEUS, while the GPS module was tested for the transmission of packets.
+Simulation of the GPS and GSM functionality was done using PROTEUS, a software tool for simulating electronic circuits. However, please note that the circuit shown in the image within this repository is a dummy circuit and does not represent the actual connections used in the project. Due to limitations of the software used to design the circuit, it was not possible to create an accurate representation of the actual circuit.
 
 ## Functionality
 
@@ -41,8 +35,4 @@ The Vehicle Theft Detection System operates as follows:
 
 ## Code and Operation
 
-The code in this repository is developed to achieve the desired functionality described above. When the correct password is entered through the switch, an SMS will be sent and the LED (starter motor) will be allowed to run. However, if an incorrect password is entered, an alert SMS with a Google Map link will be sent, and the relay will interrupt the flow of current, effectively locking the vehicle.
-
-All the components connected in the system have been tested and are functioning properly. The password entered through the switch will be displayed on an LCD. If the correct password is entered, an SMS will be sent and the LED (starter motor) will run. If the wrong password is entered, an alert SMS with a Google Map link will be sent, and the relay will interrupt the flow of current, locking the vehicle.
-
-Please refer to the code and documentation in this repository for detailed implementation instructions and additional information.
+The code in this repository is developed to achieve the desired functionality described above. When the correct password is entered through the switch, an SMS will be sent, and the LED (starter motor) will be allowed to run. However, if an incorrect password is entered, an alert SMS with a Google Map link will be sent, and the relay will interrupt the flow of current, effectively locking the vehicle.
